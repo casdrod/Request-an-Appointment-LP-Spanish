@@ -1,0 +1,32 @@
+<div id="lp-appointment-form">
+    <h1>Solicita una cita</h1>
+      <p>Gracias por tu interés en Capehart Dental. Por favor, completa tus datos en el formulario y un miembro de nuestro equipo se comunicará pronto.</p>
+                            
+             <form class="simple" method="post" action="https://tnt-adder.herokuapp.com/submit/009836e8-cc02-421d-ab10-d065dc9206d3">
+                <div ><label>Nombre</label> <input name="Name" placeholder="Nombre" required="true" type="text" /></div>
+                <div><label>Teléfono</label> <input name="Phone" placeholder="Teléfono" required="true" type="text" /></div>
+                <div><label>Correo electrónico</label> <input name="email" placeholder="Correo electrónico" required="true" type="email" /></div>
+                <div><label>¿Eres un paciente nuevo o existente?</label>
+                 <select name="Patient" >
+                     <option value="" hidden>¿Eres un paciente nuevo o existente?</option>
+                     <option value="New Patient">Nuevo paciente</option>
+                     <option value="Existing Patient">Paciente existente</option>
+                 </select>
+              </div>
+              <div class="hear">
+                    <label>¿Cómo nos has conocido?</label>
+                    <select name="Discover">
+                       <option value="" hidden>¿Cómo nos has conocido?</option>
+                       <option value="search engine">Buscador en línea/option>
+                       <option value="family">Familia/Amigos</option>
+                       <option value="promotion">Promociones</option>
+                       <option value="social media">Redes Sociales</option>
+                       <option value="other">Otro</option>
+                    </select>
+              </div>
+                <div><label>Comentarios</label><textarea name="CommentArea" placeholder="Comentarios" type="textarea" value="comments"></textarea></div>
+                <button class="btn">ENVIAR</button>
+                <input type="hidden" name="_subject" value="PPC LP NP Combo Spanish - Request an Appointment" />
+                <input type="hidden" name="_redirect" value="thanks.html" />
+            </form>
+      </div>

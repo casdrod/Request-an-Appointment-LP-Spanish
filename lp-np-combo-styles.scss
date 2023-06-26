@@ -1,0 +1,105 @@
+$white: #fff;
+$star: #febb21;
+$primary: #3F83B7;
+$secondary: #F3F3F0;
+$tertiary:#DA374F;
+$text: #000;
+$font: 'Poppins', sans-serif;
+$font2: source-serif-pro, serif; 
+
+
+#lp-appointment-form {
+	max-width: 850px;
+	padding: 10px;
+	margin: 20px auto;
+	position: relative;
+	text-align: center;
+	h1 {
+		font-size: 50px;
+		font-weight: 700;
+		margin: 10px auto 40px;
+		color: $text;
+	}
+	>p {
+		max-width: 700px;
+		margin: auto;
+		margin-bottom: 30px;
+	}
+	.simple {
+		margin: 40px auto 20px;
+		max-width: 550px;
+		padding-right: 3px;
+	}
+	label {
+		display: none;
+	}
+	input {
+		width: 93%;
+		height: 45px;
+		display: table;
+		margin: 10px auto;
+		color: $text;
+		border-radius: 5px;
+		padding: 15px;
+		font-size: 16px;
+		border: 1px solid;
+		&:focus {
+			outline-style: solid;
+			outline-width: thin;
+		}
+	}
+	textarea {
+		width: 93%;
+		display: table;
+		margin: 10px auto;
+		color: $text;
+		border-radius: 5px;
+		padding: 15px;
+		font-size: 16px;
+		border: none;
+		-webkit-box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.5);
+		box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.5);
+		height: 200px;
+		margin-bottom: 30px;
+		&:focus {
+			outline-style: solid;
+			outline-width: thin;
+			
+		}
+	}
+	select {
+		width: 93%;
+		display: table;
+		margin: 10px auto;
+		color: $text;
+		border-radius: 5px;
+		padding: 15px;
+		font-size: 16px;
+		border: 1px solid;
+		&:focus {
+			outline-style: solid;
+			outline-width: thin;
+			
+		}
+	}
+	button {
+		&:focus {
+			outline-style: solid;
+			outline-width: thin;
+			
+		}
+	}
+	.btn {color: #fff;
+		text-transform: uppercase;
+		font-size: 20px;
+		font-family: $font;}
+}
+
+
+@media (max-width: 700px) {
+	#lp-appointment-form {
+		h1 {
+			font-size: 36px;
+		}
+	}
+}
